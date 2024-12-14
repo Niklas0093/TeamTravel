@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TeamTravel",
   "resources": {
-    "hash": "sha256-mtGalnyLNQBH57Oc0xJWqsjVhPI0qL7qTsxJc5IPdNI=",
+    "hash": "sha256-sUWZr0jw7SuB3X98SYyX+Fz7CHPxUTbSPYZCPopwX2I=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.ryfn43e84m.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -46,7 +46,7 @@
       "System.Text.Encodings.Web.wasm": "sha256-4ASLPI+R+3lvUZI8lVAOpIPzNEwiqbxX910GoFqMC+A=",
       "System.Text.Json.wasm": "sha256-iYUw9hl2WtztDjy9EojyWiy4IFwuoKwYIo6kchAuCZY=",
       "System.Text.RegularExpressions.wasm": "sha256-S8ZfFQkhEU7qfOpYZSZieDFJUrg+CBXYcTzj+1rf4Eg=",
-      "TeamTravel.wasm": "sha256-DkHQbf9NUw0JKC7pJfyLasYJSTp38/qiihGUAtRKonE="
+      "TeamTravel.wasm": "sha256-3NRQjWkvpS+HASiIgG3z6PtLn0AGkuoHecOxEtMCLSE="
     }
   },
   "cacheBootResources": true,
