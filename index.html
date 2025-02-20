@@ -5,38 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeamTravel - Starke Teams, starke Reisen</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
+        html { scroll-behavior: smooth; }
         .primary-color { color: #264180; }
         .secondary-color { color: #f2541d; }
         .bg-primary { background-color: #264180; }
         .bg-secondary { background-color: #f2541d; }
+        .font-slogan { font-family: 'Lobster'; font-weight: 100; }
     </style>
 </head>
 <body class="font-sans bg-gray-100 flex flex-col min-h-screen">
     
     <!-- Header -->
     <header class="bg-primary text-white sticky top-0 w-full z-50 shadow-md">
-        <div class="container mx-auto flex justify-between items-center p-4">
+        <div class="container mx-auto flex items-center p-2 relative">
+            <!-- Logo & Slogan links -->
             <div class="flex items-center">
                 <img src="assets/images/Logo.png" alt="TeamTravel Logo" class="h-16 w-auto object-contain">
-                <h1 class="text-lg text-white ml-2 cursor-default">Starke Teams, starke Reisen</h1>
+                <h1 class="text-lg text-white ml-4 cursor-default font-slogan">Starke Teams, starke Reisen</h1>
+
             </div>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:text-[#f2541d]">Deals</a></li>
-                    <li><a href="#" class="hover:text-[#f2541d]">Mannschaftsfahrt</a></li>
-                    <li><a href="#" class="hover:text-[#f2541d]">Trainingslager</a></li>
-                    <li><a href="#kontakt" class="hover:text-[#f2541d]">Kontakt</a></li>
+    
+            <!-- Navigation absolut in die Mitte gesetzt -->
+            <nav class="absolute left-1/2 transform -translate-x-1/2">
+                <ul class="flex space-x-16">
+                    <li><a href="#deals" class="font-bold hover:text-[#f2541d]">Deals</a></li>
+                    <li><a href="#mannschaftsfahrt" class="font-bold hover:text-[#f2541d]">Mannschaftsfahrt</a></li>
+                    <li><a href="#trainingslager" class="font-bold hover:text-[#f2541d]">Trainingslager</a></li>
+                    <li><a href="#kontakt" class="font-bold hover:text-[#f2541d]">Kontakt</a></li>
                 </ul>
             </nav>
-            <input type="text" placeholder="Suche..." class="p-2 rounded-md text-black">
         </div>
     </header>
+    
+    
 
     <!-- Hintergrund-Platzhalter -->
     <div class="absolute top-0 left-0 w-full h-[500px] bg-cover bg-center" style="background-image: url('assets/images/Background.png');"></div>
 
-    
     <!-- Hero Section -->
     <section class="relative w-full h-96 flex items-center justify-center">
         <div class="bg-white bg-opacity-80 p-6 rounded-lg shadow-lg relative z-10">
@@ -51,7 +58,7 @@
     </section>
     
     <!-- Top Deals -->
-    <section class="container mx-auto py-12">
+    <section id="deals" class="container mx-auto py-12 mt-10">
         <h2 class="text-center text-2xl font-bold primary-color">Top Deals</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             <div class="bg-white p-4 shadow-md rounded-lg">
@@ -67,8 +74,20 @@
         </div>
     </section>
 
+    <!-- Mannschaftsfahrt -->
+    <section id="mannschaftsfahrt" class="container mx-auto py-12 mt-10">
+        <h2 class="text-center text-2xl font-bold primary-color">Mannschaftsfahrt</h2>
+        <p class="text-center text-gray-600 mt-4">Perfekte Gruppenreisen für Sportmannschaften, um gemeinsam unvergessliche Erlebnisse zu schaffen.</p>
+    </section>
+
+    <!-- Trainingslager -->
+    <section id="trainingslager" class="container mx-auto py-12 mt-10">
+        <h2 class="text-center text-2xl font-bold primary-color">Trainingslager</h2>
+        <p class="text-center text-gray-600 mt-4">Ideal für Teams, die sich optimal auf kommende Wettkämpfe vorbereiten möchten.</p>
+    </section>
+
     <!-- Kontaktformular -->
-    <section id="kontakt" class="container mx-auto py-12">
+    <section id="kontakt" class="container mx-auto py-12 mt-10">
         <h2 class="text-center text-2xl font-bold primary-color">Kontakt</h2>
         <div class="bg-white p-6 shadow-md rounded-lg max-w-lg mx-auto mt-6">
             <form action="#" method="post">
